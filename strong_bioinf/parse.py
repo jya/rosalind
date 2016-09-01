@@ -1,4 +1,4 @@
-def parse(f):
+def parsefile(f):
 	line = f.readline().strip()
 	id = ""
 	seq = ""
@@ -15,6 +15,10 @@ def parse(f):
 		line = f.readline().strip()
 	list[id] = seq
 	return list
+
+def parsesingle(string):
+	seq = string[string.find('\n')+1:len(string)]
+	return seq.replace('\n',"")
 
 if __name__ == "__main__":
 	convert(sys.argv[1])
