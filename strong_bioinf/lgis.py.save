@@ -1,0 +1,283 @@
+inf = open('/home/jason/Downloads/rosalind_lgis.txt')
+inf.readline()
+perm = inf.readline().strip().split()
+perm = [int(x) for x in perm]
+print perm
+inc = []
+dec = []
+for x in range(0, len(perm), 1):
+	print x
+	tempinc = []
+	tempdec = []
+	for i in range(x, len(perm), 1):
+		if i == 0:
+			tempinc.append(perm[i])
+			tempdec.append(perm[i])
+			continue
+		if perm[i] > perm[i-1]:
+AAAA
+AAAE
+AAAM
+AAAR
+AAEA
+AAEE
+AAEM
+AAER
+AAMA
+AAME
+AAMM
+AAMR
+AARA
+AARE
+AARM
+AARR
+AEAA
+AEAE
+AEAM
+AEAR
+AEEA
+AEEE
+AEEM
+AEER
+AEMA
+AEME
+AEMM
+AEMR
+AERA
+AERE
+AERM
+AERR
+AMAA
+AMAE
+AMAM
+AMAR
+AMEA
+AMEE
+AMEM
+AMER
+AMMA
+AMME
+AMMM
+AMMR
+AMRA
+AMRE
+AMRM
+AMRR
+ARAA
+ARAE
+ARAM
+ARAR
+AREA
+AREE
+AREM
+ARER
+ARMA
+ARME
+ARMM
+ARMR
+ARRA
+ARRE
+ARRM
+ARRR
+EAAA
+EAAE
+EAAM
+EAAR
+EAEA
+EAEE
+EAEM
+EAER
+EAMA
+EAME
+EAMM
+EAMR
+EARA
+EARE
+EARM
+EARR
+EEAA
+EEAE
+EEAM
+EEAR
+EEEA
+EEEE
+EEEM
+EEER
+EEMA
+EEME
+EEMM
+EEMR
+EERA
+EERE
+EERM
+EERR
+EMAA
+EMAE
+EMAM
+EMAR
+EMEA
+EMEE
+EMEM
+EMER
+EMMA
+EMME
+EMMM
+EMMR
+EMRA
+EMRE
+EMRM
+EMRR
+ERAA
+ERAE
+ERAM
+ERAR
+EREA
+EREE
+EREM
+ERER
+ERMA
+ERME
+ERMM
+ERMR
+ERRA
+ERRE
+ERRM
+ERRR
+MAAA
+MAAE
+MAAM
+MAAR
+MAEA
+MAEE
+MAEM
+MAER
+MAMA
+MAME
+MAMM
+MAMR
+MARA
+MARE
+MARM
+MARR
+MEAA
+MEAE
+MEAM
+MEAR
+MEEA
+MEEE
+MEEM
+MEER
+MEMA
+MEME
+MEMM
+MEMR
+MERA
+MERE
+MERM
+MERR
+MMAA
+MMAE
+MMAM
+MMAR
+MMEA
+MMEE
+MMEM
+MMER
+MMMA
+MMME
+MMMM
+MMMR
+MMRA
+MMRE
+MMRM
+MMRR
+MRAA
+MRAE
+MRAM
+MRAR
+MREA
+MREE
+MREM
+MRER
+MRMA
+MRME
+MRMM
+MRMR
+MRRA
+MRRE
+MRRM
+MRRR
+RAAA
+RAAE
+RAAM
+RAAR
+RAEA
+RAEE
+RAEM
+RAER
+RAMA
+RAME
+RAMM
+RAMR
+RARA
+RARE
+RARM
+RARR
+REAA
+REAE
+REAM
+REAR
+REEA
+REEE
+REEM
+REER
+REMA
+REME
+REMM
+REMR
+RERA
+RERE
+RERM
+RERR
+RMAA
+RMAE
+RMAM
+RMAR
+RMEA
+RMEE
+RMEM
+RMER
+RMMA
+RMME
+RMMM
+RMMR
+RMRA
+RMRE
+RMRM
+RMRR
+RRAA
+RRAE
+RRAM
+RRAR
+RREA
+RREE
+RREM
+RRER
+RRMA
+RRME
+RRMM
+RRMR
+RRRA
+RRRE
+RRRM
+RRRR			tempinc.append(perm[i])
+			if len(tempdec) > len(dec):
+				dec = tempdec
+			tempdec = perm[i]
+		if perm[i] < perm[i-1]:
+			tempdec.append(perm[i])
+			if len(tempinc) > len(inc):
+				inc = tempinc
+			tempinc = perm[i]
+print inc
+print dec
